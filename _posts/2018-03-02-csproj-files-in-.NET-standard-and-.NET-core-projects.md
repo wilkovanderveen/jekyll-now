@@ -19,8 +19,23 @@ Below an example from an .NET core WebAPI project:
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="4.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
-    <PackageReference Include="Scrutor" Version="2.1.2" />
   </ItemGroup>
 
 </Project>
 ```
+
+Microsoft decieded to remove all references to the files included in the project from the csproj file. Which makes creatubg and updating project files much easier than using the original csproj format.  
+
+An empty project looks like this:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+</Project>
+```
+
+Simple, isn't it?
+
+
