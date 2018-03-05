@@ -1,0 +1,1 @@
+.NET standard projects are not targeting a specific platform which can get us in trouble if you want to write unit tests because the testrunners have to run on a certain architecture. 
